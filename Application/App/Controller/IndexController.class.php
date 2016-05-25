@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 namespace App\Controller;
 use Think\Controller;
 
@@ -86,7 +86,7 @@ class IndexController extends Controller {
 		$data ["cartdata"] = $cartdata;
 		
 		$userdata = M ( "User" )->where ( array (
-				"uid" => $uid 
+				"uid" => $orderid
 		) )->find ();
 		if ($userdata) {
 			$user_id = $userdata ["id"];
